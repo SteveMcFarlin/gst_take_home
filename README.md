@@ -77,19 +77,6 @@ POST http://.../start
     }
 }
 ```
-**Stop Recording**
-
-This is a blocking call. It will return when the GST pipeline has processed the EOS event.
-
-Returns 
-- 200 OK if successful
-- 400 Bad Request if the request failed.
-
-```
-POST http://.../stop
-```
-
-
 
 **Example**
 
@@ -128,6 +115,19 @@ POST http://.../stop
     }
 }
 ```
+
+**Stop Recording**
+
+This is a blocking call. It will return when the GST pipeline has processed the EOS event.
+
+Returns 
+- 200 OK if successful
+- 400 Bad Request if the request failed.
+
+```
+POST http://.../stop
+```
+
 
 **Input Configurations**
 
